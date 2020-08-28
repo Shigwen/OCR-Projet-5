@@ -1,0 +1,412 @@
+/* Petit reset css pour éviter quelques problèmes par la suite */
+
+* {
+	flex-basis: auto;
+	box-sizing: border-box;
+}
+
+/* Pour que les liens ne soient pas bleux et soulignés */
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Propriétés des body et main */
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 1190px;
+	margin: auto;
+	margin-bottom: 100px;
+	min-height: calc(100vh - 20px);
+}
+
+/* Header */
+
+header {
+	width: 100%;
+	background-color: #1D9977;
+}
+
+.banner {
+	display: flex;
+	width: 500px;
+	height: 150px;
+	margin: auto;
+	background-color: #1D9977;
+}
+
+.banner h1 {
+	font-size: 3rem;
+	color: #F3D410;
+	margin: auto;
+}
+
+
+/* Index */
+
+main.index {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	max-width: 1300px;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+	border-collapse: collapse;
+}
+
+introduction-text {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+main h1 {
+	margin: 50px auto 0;
+	padding: 20px;
+}
+
+main h2 {
+	margin: 0 auto 50px;
+	padding: 20px;
+}
+
+.index product-card {
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+	border-collapse: collapse;
+	margin: 50px 0;
+}
+
+.index card-content {
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	height: 300px;
+}
+
+.index card-content  * {
+	margin-bottom: 20px;
+    display: block;
+	width: 100%;
+}
+
+.index card-content a {
+	margin-bottom: 0;
+}	
+
+.index product-card img {
+	object-fit: contain;
+	max-height: 250px;
+}
+
+.index [data-name] {
+	margin: 0 auto 20px;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.index [data-price] {
+	font-size: 1.5rem;
+}
+
+
+
+/* Product page */
+
+.product_page product-card {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+	border-collapse: collapse;
+	margin: 50px auto;
+}
+
+.product_page card-content {
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	height: 380px;
+}
+
+.product_page card-content  * {
+	margin-bottom: 20px;
+    display: block;
+	width: 100%;
+}
+
+.product_page card-content a {
+	margin-bottom: 0;
+}	
+
+.product_page product-card img {
+	object-fit: contain;
+	max-height: 500px;
+}
+
+.product_page [data-name] {
+	margin: 0 auto 20px;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.product_page [data-price] {
+	font-size: 1.5rem;
+}
+
+
+select {
+	font-size: 1.5rem;
+}
+
+
+/* Cart */ 
+
+/* .cart product-card {
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+.cart card-content {
+	display: flex;
+	flex-direction: row;
+	height: 250px;
+}
+
+.cart card-content >* {
+	display: inline-block;
+	padding: 20px;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+.cart product-card img {
+	object-fit: contain;
+	max-height: 250px;
+	width: 375px;
+}
+
+.cart [data-name] {
+	text-align: center;
+	font-size: 1.5rem;
+	width: 200px;
+}
+
+.cart [data-price] {
+	font-size: 1.5rem;
+	width: 150px;
+} */
+
+
+/* Cart 2 */
+
+cart-container 
+{
+	display: block;
+}
+
+cart-item
+{
+	display: flex;
+	width: 100%;
+}
+
+cart-item img
+{
+	width: 375px;
+	height: 250px;
+	object-fit: cover;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+item-name
+{
+	display: flex;
+	font-size: 1.5rem;
+	width: 200px;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+item-color
+{
+	display: flex;
+	font-size: 1.5rem;
+	width: 200px;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+item-quantity
+{
+	display: flex;
+	font-size: 1.5rem;
+	width: 200px;
+	justify-content: center;
+	align-items: center;
+	border: black;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+item-quantity label
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+item-quantity input
+{
+	font-size: 1.2rem;
+	max-width: 3.8rem;
+	text-align: center;
+}
+
+item-price
+{
+	display: flex;
+	font-size: 1.5rem;
+	width: 200px;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+/* boutons et animations */
+
+
+.btn {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2rem;
+	transform: scale(1);
+	transition-property: transform;
+	transition-duration: 400ms;
+	width: 350px;
+	padding: 20px;
+}
+
+.btn:hover{
+	transform: scale(1.15);
+}
+
+.menu {
+	cursor: pointer;
+	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 400ms;
+}	
+
+
+/* Voici le code utilisé par le site Animate.css pour obtenir l'effet de wiggle demandé. Il est ici appelé shakeX. 
+/* ShakeX (site : https://animate.style/) */
+
+@keyframes shakeX {
+	from,
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translate3d(10px, 0, 0);
+	}
+}
+
+
+.animate__shakeX:hover {
+	animation-name: shakeX;
+	animation-duration: 1s;
+}
+
+
+/* Footer */
+
+footer {
+	background-color: #1D9977;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+.footer_container {
+	display: flex;
+	width: 100%;
+    max-width: 1190px;
+	height: 100px;
+	margin: auto;
+	justify-content: space-between;
+	background-color: #1D9977;
+}
+
+.liens_utiles {
+	font-size: 2rem;
+	color: #F3D410;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 32px;
+}
+
+/*     RESPONSIVE     */
+
+@media (max-width: 1000px) {
+
+	.liste_menus {
+		width: 100%;
+		max-width: 1000px;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+

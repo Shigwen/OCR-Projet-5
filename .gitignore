@@ -1,0 +1,8 @@
+node_modules/*     
+.DS_Store			
+*/node_modules/*     
+.vscode               
+# Pour éviter d'upload 1600 fichiers de node modules dans github
+# Pour éviter d'upload des fichiers liés à mac
+# Pour éviter d'upload d'autres fichiers de node modules qui se seraient planqués dans des sous-dossiers
+# Pour faire en sorte que les fichiers vs code ne s'upload pad dans github
