@@ -40,12 +40,48 @@
 	<main class="cart">
 
 		<h1>Voici votre panier</h1>
-		<cart-container>
 
+		<cart-container>
 		</cart-container>
-		<total-price>
-			
+
+		<total-price hidden>
 		</total-price>
+
+		<form method="POST" action="/order.html" name="order" hidden>
+
+			<label>
+				Prénom :
+				<input type="text" name="firstname" required value="Michael"/>
+			</label>
+
+			<label>
+				Nom :
+				<input type="text" name="lastname" required value="Donati"/>
+			</label>
+
+			<label>
+				Adresse :
+				<input type="text" name="address" required value="87 rue de la Carlineto"/>
+			</label>
+
+			<label>
+				Code postal :
+				<input type="text" name="zipcode" required value="13300" />
+			</label>
+
+			<label>
+				Ville :
+				<input type="text" name="city" required value="Salon-de-Provence" />
+			</label>
+
+			<label>
+				Adresse Email :
+				<input type="email" name="email" required value="michael.donati@hotmail.com" />
+			</label>
+
+			<button type="submit" class="btn">Passer votre commande</button>
+
+		</form>
 
 	</main>
 

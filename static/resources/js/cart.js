@@ -13,6 +13,11 @@ class Cart
 		return this.items.findIndex(
 			(item) =>
 			{
+				// console.groupCollapsed();
+				// console.log(product_id);
+				// console.log(item.product_id);
+				// console.log(item);
+				// console.groupEnd();
 				return item.product_id === product_id;		// On cherche un objet qui a le même ID que celui passé en paramètre de la fonction
 			}
 		);
@@ -43,6 +48,7 @@ class Cart
 	removeProduct(product_id)
 	{
 		const index = this._getProductIndex(product_id);
+		console.log(index);
 		if (index > -1)
 		{
 			this.items.splice(index, 1);  // retire un élément à partir de son index, donc retire le nounours qui a l'ID, et réarrange le tableau, contrairement à delete
@@ -72,6 +78,11 @@ class Cart
 	getProductCount()
 	{
 		return this.items.length;
+	}
+
+	getAllProducts()
+	{
+		return this.items;
 	}
 
 	save()

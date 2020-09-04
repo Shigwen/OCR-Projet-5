@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 }
 
+[hidden] {
+	display: none!important;
+}
+
 /* Pour que les liens ne soient pas bleux et soulignés */
 
 a {
@@ -181,52 +185,7 @@ select {
 }
 
 
-/* Cart */ 
-
-/* .cart product-card {
-	display: flex;
-	flex-direction: row;
-	width: 90%;
-	border: solid;
-	border-color: black;
-	border-width: 2px;
-	border-collapse: collapse;
-	margin: 0 auto;
-}
-
-.cart card-content {
-	display: flex;
-	flex-direction: row;
-	height: 250px;
-}
-
-.cart card-content >* {
-	display: inline-block;
-	padding: 20px;
-	border: solid;
-	border-color: black;
-	border-width: 2px;
-}
-
-.cart product-card img {
-	object-fit: contain;
-	max-height: 250px;
-	width: 375px;
-}
-
-.cart [data-name] {
-	text-align: center;
-	font-size: 1.5rem;
-	width: 200px;
-}
-
-.cart [data-price] {
-	font-size: 1.5rem;
-	width: 150px;
-} */
-
-
-/* Cart 2 */
+/* Cart */
 
 cart-container 
 {
@@ -241,8 +200,9 @@ cart-item
 
 cart-item img
 {
-	width: 375px;
-	height: 250px;
+	flex: 0 0 auto;
+	width: 200px;
+	height: 150px;
 	object-fit: cover;
 	border: solid;
 	border-color: black;
@@ -251,11 +211,13 @@ cart-item img
 
 item-name
 {
+	flex: 0 0 auto;
 	display: flex;
 	font-size: 1.5rem;
-	width: 200px;
+	width: 150px;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	border: solid;
 	border-color: black;
 	border-width: 2px;
@@ -263,11 +225,13 @@ item-name
 
 item-color
 {
+	flex: 0 0 auto;
 	display: flex;
 	font-size: 1.5rem;
-	width: 200px;
+	width: 150px;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	border: solid;
 	border-color: black;
 	border-width: 2px;
@@ -275,9 +239,10 @@ item-color
 
 item-quantity
 {
+	flex: 0 0 auto;
 	display: flex;
 	font-size: 1.5rem;
-	width: 200px;
+	width: 150px;
 	justify-content: center;
 	align-items: center;
 	border: black;
@@ -288,6 +253,7 @@ item-quantity
 
 item-quantity label
 {
+	flex: 0 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -296,6 +262,7 @@ item-quantity label
 
 item-quantity input
 {
+	flex: 0 0 auto;
 	font-size: 1.2rem;
 	max-width: 3.8rem;
 	text-align: center;
@@ -303,14 +270,49 @@ item-quantity input
 
 item-price
 {
+	flex: 0 0 auto;
 	display: flex;
 	font-size: 1.5rem;
-	width: 200px;
+	width: 150px;
 	justify-content: center;
 	align-items: center;
 	border: solid;
 	border-color: black;
 	border-width: 2px;
+}
+
+.cart total-price 
+{
+	display : flex;
+	margin-left: auto;
+	align-self: right;
+	font-size: 1.5rem;
+	width: 150px;
+	height: 150px;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+.cart form
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.cart form label
+{
+	display: flex;
+	flex-direction: column;
+	min-width: 340px;
+	max-width: 600px;
+}
+
+.cart form .btn
+{
+	margin: 50px auto;
 }
 
 /* boutons et animations */
